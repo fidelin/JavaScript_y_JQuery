@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>  <!---->
+  <body>
+    <script type="text/javascript">
+    var ladoa;
+    var ladob;
+    var ladoc;
+alert("   -\n   -     -\n A-         C\n   -                 -\n   -  -  - - B -  -  -  -\n\n\n\n\n")
+     ladoa=prompt("ingresa el lado --> A <-- ");
+     ladob=prompt("ingresa el lado --> B <-- ");
+     ladoc=prompt("ingresa el lado --> C <-- ");
+
+     if (ladoa == ladob && ladob==ladoc){
+      	alert("lado A= "+ladoa+" \nlado B= "+ladob+"\nlado C= "+ladoc+" \n\n\nEs un Triangunlo Equilatero");
+     }else if (ladoa==ladob || ladoa==ladoc || ladob==ladoc){
+      	alert("lado A= "+ladoa+" \nlado B= "+ladob+"\nlado C= "+ladoc+" \n\n\nEs un Triangunlo isoceles");
+     }else if(ladoa !=ladob || ladob !==ladoa || ladoc ==ladob){
+     	alert( "lado A= "+ladoa+" \nlado B= "+ladob+"\nlado C= "+ladoc+" \n\n\nEs un triangulo Escaleno");
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <style media="screen">
+    body{
+      margin-left: 300px;
+      margin-right: 300px;
+    }
+    #ak, #bar, #gok,#result,#re,#fri{
+      color: red;
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <h2>¡Que tanto sabes de Dragon Ball!</h2>
+    <form id="for">
+      <label for="">1.-Quien es el creador de Dragon Ball ?</label>
+      <select id="aki">
+        <option value="1">Ninguno</option>
+        <option value="2">Rene Garcia</option>
+        <option value="3">Mario Castañeda</option>
+        <option value="4">Akira Toriyama</option>
+      </select> <br>
+     <div id="ak"></div> <hr>
+
+     <label for="">2.-Quien hace el doblage de la voz de Vegeta ?</label>
+     <select id="pa">
+       <option value="1">Ninguno</option>
+       <option value="2">Rene Garcia</option>
+       <option value="3">Mario Castañeda</option>
+       <option value="4">Akira Toriyam</option>
+     </select> <br>
+    <div id="bar"></div> <hr>
+
+    <label for="">3.-quien es el legendario super sayayin?</label>
+    <select id="go">
+      <option value="1">Ninguno</option>
+      <option value="2">Broli</option>
+      <option value="3">Goku</option>
+      <option value="4">Vegeta</option>
+    </select> <br>
+   <div id="gok"></div> <hr>
+
+     <label for="">4.-Cuantos hijos tiene goku ?</label>
+     <select id="hijo">
+       <option value="1">Ninguno</option>
+       <option value="2">3</option>
+       <option value="3">2</option>
+       <option value="">4</option>
+     </select> <br>
+    <div id="result"></div> <hr>
+
+     <label for="">5.-Quien es la esposa de vegeta ?</label>
+     <select id="es">
+       <option value="1">Ninguno</option>
+       <option value="2">Milk</option>
+       <option value="3">Bulma</option>
+       <option value="4">Videl</option>
+     </select> <br>
+    <div id="re"></div> <hr>
+
+   <label for="">6.-Quien mato a frezzer ?</label>
+   <select id="fre">
+     <option value="1">Ninguno</option>
+     <option value="2">Trons</option>
+     <option value="3">Vegeta</option>
+     <option value="4">Gohan</option>
+   </select> <br>
+  <div id="fri"></div> <hr>
+
+  <button type="submit">Respuestas</button>
+ </form>
+
+    <script language="javascript">
+
+    $("#for").on("submit", function(event) {//1
+        event.preventDefault();
+        var $answer = $("#aki");
+        var answer = $answer.val();
+        console.log(answer);
+        if (answer === "4") {
+            $("#ak").text("Correcto");
+
+        } else {
+            $("#ak").text("falso");
+        }
+    });
+
+    $("#for").on("submit", function(event) {//2
+        event.preventDefault();
+        var $answer = $("#pa");
+        var answer = $answer.val();
+        console.log(answer);
+        if (answer === "2") {
+            $("#bar").text("Correcto");
+        } else {
+            $("#bar").text("falso");
+        }
+    });
+
+    $("#for").on("submit", function(event) {//3
+        event.preventDefault();
+        var $answer = $("#go");
+        var answer = $answer.val();
+        console.log(answer);
+        if (answer === "3") {
+            $("#gok").text("Correcto");
+        } else {
+            $("#gok").text("falso");
+        }
+    });
+
+    $("#for").on("submit", function(event) {//4
+        event.preventDefault();
+        var $answer = $("#hijo");
+        var answer = $answer.val();
+        console.log(answer);
+        if (answer === "3") {
+            $("#result").text("Correcto");
+        } else {
+            $("#result").text("falso");
+        }
+    });
+
+    $("#for").on("submit", function(event) {//5
+        event.preventDefault();
+        var $answer = $("#es");
+        var answer = $answer.val();
+        console.log(answer);
+        if (answer === "3") {
+            $("#re").text("Correcto");
+        } else {
+            $("#re").text("falso");
+        }
+    });
+
+    $("#for").on("submit", function(event) {//6
+        event.preventDefault();
+        var $answer = $("#fre");
+        var answer = $answer.val();
+        console.log(answer);
+        if (answer === "2") {
+            $("#fri").text("Correcto");
+        } else {
+            $("#fri").text("falso");
+        }
+    });
+
+    </script>
+
+  </body>
+</html>

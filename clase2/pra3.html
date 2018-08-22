@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    function selec(per){
+      document.formu.mostrar.value=per;
+    }
+    </script>
+  </head>
+  <body>
+  <form id="formu" name="formu" action="index.html" method="post">
+    Selecciona tu personaje favorito: <br> <br>
+
+    <input type="radio" name="per" onclick="selec(this.value)" value="Goku">Goku <br>
+
+    <input type="radio" name="per" onclick="selec(this.value)" value="Vegeta">Vegeta <br>
+
+    <input type="radio" name="per" onclick="selec(this.value)" value="Trons">Trons <br>
+
+    <input type="radio" name="per" onclick="selec(this.value)" value="Crilin">Crilin <br>
+
+    <input type="radio" name="per" onclick="selec(this.value)" value="Gohan">Gohan <br>
+
+    <input type="radio" name="per" onclick="selec(this.value)" value="Picoro">Picoro <br>
+
+    <input type="text" name="mostrar" size="20">
+  </form>
+  </body>
+</html>

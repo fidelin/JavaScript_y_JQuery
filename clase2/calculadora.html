@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <fieldset>  <!--ponemos un margen-->
+      <legend>suma de dos numeros</legend> <!--titulo del margen-->
+    <h1>Calculadoritha</h1>
+
+    <!--a continuacion empezamos creando nuestro porfulario poniendo label para los titulos
+   el input de tipo texo para ingresar los datos y posteriormente ponemos 4 inputs de multo
+ boton para cada una de las operaciones aritmeticas, en cada boton pondremos un evento onclick
+que este ara referencia a cada operacion (suma, resta multiplicacion y division)-->
+    <label for="">Numero 1:</label>
+    <input type="text" id="numero1"> <br> <br>
+    <label for="">Numero 2:</label>
+    <input type="text" id="numero2"> <br> <br>
+
+    <input type="button" onclick="Sumar();" value="+">
+    <input type="button" onclick="Restar();" value="-">
+    <input type="button" onclick="Multiplicar();" value="*">
+    <input type="button" onclick="Dividir();" value="/">
+    <br> <br>
+
+    </fieldset>
+    <script language="javascript">
+    /** a continuacion empezamos creando el primer metodo de suma  en la cual puse dos varibles de tipo var
+    para guardar los datos que se optienen de los campos de texto del numero1 y numero2, despues una variable
+    para guardar el resultado de la suma y antes de realizar la operacion lo comvertimos a tipo de dato entero
+    para que se puedan sumar restar etc. y por ultimo de manda un alert con el resultado de la operacion.*/
+    function Sumar(){ //suma
+      var n1=document.getElementById('numero1').value;
+      var n2=document.getElementById('numero2').value;
+      var suma= parseInt(n1)+parseInt(n2);
+      alert("la suma es: "+ suma);
+      ducument.re.value=suma;
+    }
+
+    function Restar(){ //resta
+      var n1=document.getElementById('numero1').value;
+      var n2=document.getElementById('numero2').value;
+      var resta= parseInt(n1)-parseInt(n2);
+      alert("la Resta es: "+ resta);
+    }
+
+    function Multiplicar(){ //multiplicacion
+      var n1=document.getElementById('numero1').value;
+      var n2=document.getElementById('numero2').value;
+      var multi= parseInt(n1)*parseInt(n2);
+      alert("la multiplicacion es: "+ multi);
+    }
+
+    function Dividir(){ //Dividir
+      var n1=document.getElementById('numero1').value;
+      var n2=document.getElementById('numero2').value;
+      var Divi= parseInt(n1)/parseInt(n2);
+      alert("la Divicion es: "+ Divi);
+    }
+
+    </script>
+
+  </body>
+</html>
